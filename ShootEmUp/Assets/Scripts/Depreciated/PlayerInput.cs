@@ -28,7 +28,7 @@ namespace ShootEmUp
 
         private void Update()
         {
-            characterMovement.movementInput = playerActionControls.Basic.Move.ReadValue<Vector2>();
+            //characterMovement.movementInput = playerActionControls.Basic.Move.ReadValue<Vector2>();
         }
     }
 }

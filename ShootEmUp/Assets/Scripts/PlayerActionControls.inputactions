@@ -1,5 +1,5 @@
 {
-    "name": "PlayerControls",
+    "name": "PlayerActionControls",
     "maps": [
         {
             "name": "Basic",
@@ -7,16 +7,16 @@
             "actions": [
                 {
                     "name": "Move",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "f3496b32-6f97-4644-8c16-02ecc7c15479",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
                 }
             ],
             "bindings": [
                 {
-                    "name": "2D Vector",
+                    "name": "WASD",
                     "id": "259ec495-3f35-429f-872b-a66c775804e8",
                     "path": "2DVector",
                     "interactions": "",
