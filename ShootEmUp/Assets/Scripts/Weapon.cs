@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    [SerializeField] private IWeapon weaponSocket;
+    private IWeapon currentWeapon;
 
     private void Awake()
     {
-        weaponSocket = new Blaster();
+        currentWeapon = GetComponentInChildren<Blaster>();
+    }
+
+    private void OnShoot()
+    {
+        currentWeapon.Shoot();
     }
 }

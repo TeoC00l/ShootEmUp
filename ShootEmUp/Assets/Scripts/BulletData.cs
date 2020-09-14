@@ -2,10 +2,10 @@
 
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Bullet", menuName = "Bullet")]
+[CreateAssetMenu(fileName = "New Bullet Data", menuName = "Bullet")]
 public class BulletData : ScriptableObject
 {
-    [SerializeField] private float speed = 10f;
-    [SerializeField] private float damage = 5f;
-    [SerializeField] private ParticleSystem onHitEffect;
+    public float speed = 10f;
+    public float damage = 5f;
+    public ParticleSystem onHitEffect;
 }

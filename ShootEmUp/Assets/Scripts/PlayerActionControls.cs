@@ -27,6 +27,14 @@ namespace ShootEmUp
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Shoot"",
+                    ""type"": ""Button"",
+                    ""id"": ""4b2792ca-596e-4cdd-92b4-7850b88e6d6e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -84,6 +92,17 @@ namespace ShootEmUp
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""690d38f1-7a46-4d13-92d2-33114fa5321e"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -93,6 +112,7 @@ namespace ShootEmUp
             // Basic
             m_Basic = asset.FindActionMap("Basic", throwIfNotFound: true);
             m_Basic_Move = m_Basic.FindAction("Move", throwIfNotFound: true);
+            m_Basic_Shoot = m_Basic.FindAction("Shoot", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -143,11 +163,13 @@ namespace ShootEmUp
         private readonly InputActionMap m_Basic;
         private IBasicActions m_BasicActionsCallbackInterface;
         private readonly InputAction m_Basic_Move;
+        private readonly InputAction m_Basic_Shoot;
         public struct BasicActions
         {
             private @PlayerActionControls m_Wrapper;
             public BasicActions(@PlayerActionControls wrapper) { m_Wrapper = wrapper; }
             public InputAction @Move => m_Wrapper.m_Basic_Move;
+            public InputAction @Shoot => m_Wrapper.m_Basic_Shoot;
             public InputActionMap Get() { return m_Wrapper.m_Basic; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -160,6 +182,9 @@ namespace ShootEmUp
                     @Move.started -= m_Wrapper.m_BasicActionsCallbackInterface.OnMove;
                     @Move.performed -= m_Wrapper.m_BasicActionsCallbackInterface.OnMove;
                     @Move.canceled -= m_Wrapper.m_BasicActionsCallbackInterface.OnMove;
+                    @Shoot.started -= m_Wrapper.m_BasicActionsCallbackInterface.OnShoot;
+                    @Shoot.performed -= m_Wrapper.m_BasicActionsCallbackInterface.OnShoot;
+                    @Shoot.canceled -= m_Wrapper.m_BasicActionsCallbackInterface.OnShoot;
                 }
                 m_Wrapper.m_BasicActionsCallbackInterface = instance;
                 if (instance != null)
@@ -167,6 +192,9 @@ namespace ShootEmUp
                     @Move.started += instance.OnMove;
                     @Move.performed += instance.OnMove;
                     @Move.canceled += instance.OnMove;
+                    @Shoot.started += instance.OnShoot;
+                    @Shoot.performed += instance.OnShoot;
+                    @Shoot.canceled += instance.OnShoot;
                 }
             }
         }
@@ -174,6 +202,7 @@ namespace ShootEmUp
         public interface IBasicActions
         {
             void OnMove(InputAction.CallbackContext context);
+            void OnShoot(InputAction.CallbackContext context);
         }
     }
 }

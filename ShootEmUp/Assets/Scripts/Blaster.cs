@@ -3,26 +3,26 @@
 using UnityEngine;
 using UnityEngine.Assertions;
 
-public class Blaster : IWeapon
+public class Blaster : MonoBehaviour, IWeapon
 {
-    private WeaponData weaponData;
+    [SerializeField] private WeaponData weaponData;
     private float fireRate;
     private float damage;
-
-    [SerializeField] private Bullet bullet;
+    private GameObject bullet;
 
     private void Awake()
     {
-        Assert.IsNotNull(bullet, this.GetType().Name + " is missing bullet.");
         Assert.IsNotNull(weaponData, this.GetType().Name + " is missing WeaponData.");
 
         fireRate = weaponData.fireRate;
         damage = weaponData.damage;
+        bullet = weaponData.bullet;
     }
-    
+
     public void Shoot()
     {
-        //Take bullet out of object pool, place here and initiate it with a direction
-        
+        GameObject shot = Instantiate(bullet);
+        shot.transform.position = transform.position;
+        shot.GetComponent<Bullet>().direction = transform.up;
     }
 }
