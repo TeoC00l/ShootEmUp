@@ -4,5 +4,6 @@ using UnityEngine;
 
 public interface IWeapon
 {
+    bool IsShooting { get; set; }
     void Shoot();
 }

@@ -8,9 +8,9 @@ public class Bullet : MonoBehaviour
 {
     [SerializeField] private BulletData bulletData;
     [Tooltip("Time in seconds until bullet is deactivated")]
-    [SerializeField] private float lifeTime;
+    private float lifeTime;
     
-    [NonSerialized] public float speed = 10f;
+    private float speed = 10f;
     [NonSerialized] public Vector3 direction = Vector3.up;
     
     private float timer;
@@ -19,6 +19,7 @@ public class Bullet : MonoBehaviour
     {
         Assert.IsNotNull(bulletData, gameObject.name + " have not been assigned BulletData");
         speed = bulletData.speed;
+        lifeTime = bulletData.lifeTime;
     }
 
     private void OnEnable()
@@ -34,10 +35,8 @@ public class Bullet : MonoBehaviour
 
         if (timer <= 0)
         {
-            //Disable game object
+            gameObject.SetActive(false);
         }
-
     }
-    
     
 }

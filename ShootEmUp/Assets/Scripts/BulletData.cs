@@ -6,6 +6,7 @@ using UnityEngine;
 public class BulletData : ScriptableObject
 {
     public float speed = 10f;
+    public float lifeTime = 0.5f;
     public float damage = 5f;
     public ParticleSystem onHitEffect;
 }
