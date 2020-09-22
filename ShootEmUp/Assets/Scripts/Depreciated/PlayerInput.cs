@@ -4,16 +4,16 @@ using UnityEngine;
 
 namespace ShootEmUp
 {
-    [RequireComponent(typeof(CharacterMovement))]
+    [RequireComponent(typeof(PlayerMovement))]
     public class PlayerInput : MonoBehaviour
     {
         private PlayerActionControls playerActionControls;
-        private CharacterMovement characterMovement;
+        private PlayerMovement playerMovement;
 
         private void Awake()
         {
             playerActionControls = new PlayerActionControls();
-            characterMovement = GetComponent<CharacterMovement>();
+            playerMovement = GetComponent<PlayerMovement>();
         }
 
         private void OnEnable()

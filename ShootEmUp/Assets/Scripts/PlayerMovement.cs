@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 namespace ShootEmUp
 {
-    public class CharacterMovement : MonoBehaviour
+    public class PlayerMovement : MonoBehaviour
     {
         [System.NonSerialized] public Vector2 movementInput = default;        
         [SerializeField] private float speed = 10f;

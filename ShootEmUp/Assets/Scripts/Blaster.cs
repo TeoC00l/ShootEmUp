@@ -1,6 +1,5 @@
 ﻿//@Author: Teodor Tysklind / FutureGames / Teodor.Tysklind@FutureGames.nu
 
-using System;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Assertions;

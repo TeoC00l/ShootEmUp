@@ -29,15 +29,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Blaster.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/SpawnManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.0/InputSystem/Plugins/PlayerInput/PlayerInput.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Parallax.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BulletData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PoolManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.0/InputSystem/Plugins/PlayerInput/InputValue.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HealthComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DamageableData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.0/InputSystem/Plugins/PlayerInput/PlayerInput.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Blaster.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BulletData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerHealthComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -53,10 +54,36 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IWeapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Blaster.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Parallax.cs" />
         <option value="$PROJECT_DIR$/Assets/SpawnManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HealthComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DamageableData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerHealthComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/EnemyHealthComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/PlayerDeathBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/EnemyDeathBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/PlayerHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Damageable.cs" />
+        <option value="$PROJECT_DIR$/Assets/DeathBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/SineEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/EnemyMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/EnemyHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Health.cs" />
+        <option value="$PROJECT_DIR$/Assets/SineEnemyBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/EnemyBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/SineEnemyMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/IEnemyMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SineEnemyMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Blaster.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyDeathBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SineEnemyBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyHealth.cs" />
       </list>
     </option>
   </component>
@@ -109,6 +136,7 @@
       <workItem from="1600160613115" duration="13409000" />
       <workItem from="1600351329574" duration="6117000" />
       <workItem from="1600708616004" duration="7488000" />
+      <workItem from="1600769923954" duration="23387000" />
     </task>
     <servers />
   </component>
@@ -133,15 +161,20 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2714" y="221" key="RiderGenerateDialog" timestamp="1600775638415">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2714" y="221" key="RiderGenerateDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1600775638415" />
     <state x="2381" y="165" key="SettingsEditor" timestamp="1599819981596">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2381" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599819981596" />
-    <state x="1822" y="-15" width="1539" height="1027" maximized="true" key="dock-window-1" timestamp="1600356905448">
+    <state x="1913" y="0" width="974" height="1047" key="dock-window-1" timestamp="1600793298335">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="1717" y="-20" width="1539" height="1027" maximized="true" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600184036143" />
     <state x="1822" y="-15" width="1539" height="1027" maximized="true" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1600356905448" />
+    <state x="1913" y="0" width="974" height="1047" key="dock-window-1/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1600793298335" />
     <state x="2536" y="240" key="run.anything.popup" timestamp="1600185482464">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

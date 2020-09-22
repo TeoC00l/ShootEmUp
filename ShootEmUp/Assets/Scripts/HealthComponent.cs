@@ -2,6 +2,9 @@
 
 using UnityEngine;
 
-public class Spawn : MonoBehaviour
+public interface IHealthComponent
 {
+    void LowerHitPoints(int damage);
+    void Die();
+    
 }
