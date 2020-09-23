@@ -19,12 +19,4 @@ public class GameManager : MonoBehaviour
             return instance;
         }
     }
-
-    [NonSerialized] public PlayerHealth playerHealth;
-
-private void Awake()
-    {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        playerHealth = player.GetComponent<PlayerHealth>();
-    }
 }

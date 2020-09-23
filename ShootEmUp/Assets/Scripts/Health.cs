@@ -5,14 +5,23 @@ using UnityEngine.Assertions;
 
 public abstract class Health : MonoBehaviour
 {
-    [SerializeField] private int maxHitPoints = 10;
     protected IDeathBehaviour deathBehaviour;
+    protected ITakeDamageBehaviour takeDamageBehaviour;
+    
+    [SerializeField] private int maxHitPoints = 10;
     
     public int CurrentHitPoints { get; set; }
 
+    private void Awake()
+    {
+        Initialize();
+        
+        Assert.IsNotNull(deathBehaviour);
+        Assert.IsNotNull(takeDamageBehaviour);
+    }
+    
     private void OnEnable()
     {
-        Assert.IsNotNull(deathBehaviour);
         CurrentHitPoints = maxHitPoints;
     }
     
@@ -21,13 +30,11 @@ public abstract class Health : MonoBehaviour
         deathBehaviour.Die();
     }
     
-    public void LowerHitPoints(int damage)
+    public void TakeDamage(int damage)
     {
-        CurrentHitPoints -= damage;
-        
-        if(CurrentHitPoints <= 0)
-        {
-            Die();
-        }
+        takeDamageBehaviour.TakeDamage(damage);
     }
+
+    //Set Behaviours In this rather than Awake()
+    protected abstract void Initialize();
 }

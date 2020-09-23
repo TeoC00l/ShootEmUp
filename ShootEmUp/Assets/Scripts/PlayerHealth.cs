@@ -2,21 +2,14 @@
 
 using UnityEngine;
 
-[RequireComponent(typeof(PlayerDeathBehaviour))]
 public class PlayerHealth : Health
 {
-    private void Awake()
+    protected override void Initialize()
     {
-        deathBehaviour = GetComponent<PlayerDeathBehaviour>();
-    }
-    
-    public void LowerHitPoints(int damage)
-    {
-        CurrentHitPoints -= damage;
+        deathBehaviour = new PlayerDeathBehaviour(gameObject);
+        takeDamageBehaviour = new PlayerTakeDamageBehaviour(GetComponent<Shield>(), this);
         
-        if(CurrentHitPoints <= 0)
-        {
-            Die();
-        }
+        
+        
     }
 }

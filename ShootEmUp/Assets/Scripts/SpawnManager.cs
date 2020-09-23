@@ -9,10 +9,9 @@ public class SpawnManager : MonoBehaviour
     private float minSpawnTime = 0.05f;
     private float maxSpawnTime = 0.5f;
     private float timer = default;
-    [SerializeField] private float poolSizes = 100;
     
     private Transform[] spawnPositions;
-    [SerializeField] private GameObject[] spawnObjects;
+    [SerializeField] private GameObject[] spawnObjects = default;
     
     private void Awake()
     {

@@ -2,7 +2,7 @@
 
 using UnityEngine;
 
-public class Gun : MonoBehaviour
+public interface ITakeDamageBehaviour
 {
-
+    void TakeDamage(int damage);
 }

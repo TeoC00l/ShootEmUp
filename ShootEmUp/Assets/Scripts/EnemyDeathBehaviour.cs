@@ -2,8 +2,15 @@
 
 using UnityEngine;
 
-public class EnemyDeathBehaviour : MonoBehaviour, IDeathBehaviour
+public class EnemyDeathBehaviour : IDeathBehaviour
 {
+    private GameObject gameObject;
+    
+    public EnemyDeathBehaviour(GameObject gameObject)
+    {
+        this.gameObject = gameObject;
+    }
+    
     public void Die()
     {
         gameObject.SetActive(false);

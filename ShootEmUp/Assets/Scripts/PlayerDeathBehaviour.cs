@@ -2,10 +2,18 @@
 
 using UnityEngine;
 
-public class PlayerDeathBehaviour : MonoBehaviour, IDeathBehaviour
+public class PlayerDeathBehaviour : IDeathBehaviour
 {
+    private GameObject player;
+    
+    public PlayerDeathBehaviour(GameObject player)
+    {
+        this.player = player;
+    }
+    
     public void Die()
     {
-        Destroy(gameObject);
+        // TODO: Change so that nothing is passed in constructor, and GameOver() exists in game manager
+        player.SetActive(false);
     }
 }

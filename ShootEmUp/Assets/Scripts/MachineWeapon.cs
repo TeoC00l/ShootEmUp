@@ -6,9 +6,8 @@ using UnityEngine.Assertions;
 
 public class MachineWeapon : MonoBehaviour, IWeapon
 {
-    public bool IsShooting { get; set; }
 
-    [SerializeField] private WeaponData weaponData;
+    [SerializeField] private WeaponData weaponData = default;
     private float fireRate;
     private float fireCooldown;
     private GameObject bullet;

@@ -1,14 +1,12 @@
 ﻿//@Author: Teodor Tysklind / FutureGames / Teodor.Tysklind@FutureGames.nu
 
 using UnityEngine;
-
-[RequireComponent(typeof(EnemyHealth))]
 [RequireComponent(typeof(SineEnemyMovement))]
-public class SineEnemyBehaviour: EnemyBehaviour
+public class SineEnemy: Enemy
 {
-    private void Awake()
+    protected override void Initialize()
     {
         health = GetComponent<EnemyHealth>();
-        gameObject.tag = "Damageable";
+        movement = GetComponent<SineEnemyMovement>();
     }
 }

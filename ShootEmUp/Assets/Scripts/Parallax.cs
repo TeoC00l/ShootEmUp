@@ -4,7 +4,7 @@ public class Parallax : MonoBehaviour
 {
     private float size;
     [SerializeField] private float marginal = 0.01f;
-    [SerializeField] private float parallaxEffect;
+    [SerializeField] private float parallaxEffect = default;
 
     void Start()
     {
@@ -22,7 +22,7 @@ public class Parallax : MonoBehaviour
         transform.position += Vector3.down * (parallaxEffect * Time.deltaTime);
 
     }
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("MainCamera"))
         {

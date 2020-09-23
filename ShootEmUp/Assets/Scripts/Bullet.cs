@@ -6,7 +6,8 @@ using UnityEngine.Assertions;
 
 public class Bullet : MonoBehaviour
 {
-    [SerializeField] private BulletData bulletData;
+    [SerializeField] private BulletData bulletData = default;
+    
     [Tooltip("Time in seconds until bullet is deactivated")]
     private float lifeTime;
 
@@ -45,7 +46,7 @@ public class Bullet : MonoBehaviour
     {
         if (other.CompareTag("Damageable"))
         {
-            other.GetComponent<Health>().LowerHitPoints(bulletData.damage);
+            other.GetComponent<Health>().TakeDamage(bulletData.damage);
         }
     }
 }

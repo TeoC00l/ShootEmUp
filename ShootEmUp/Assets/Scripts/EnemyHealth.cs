@@ -2,11 +2,11 @@
 
 using UnityEngine;
 
-[RequireComponent(typeof(EnemyDeathBehaviour))]
 public class EnemyHealth : Health
 {
-    private void Awake()
+    protected override void Initialize()
     {
-        deathBehaviour = GetComponent<EnemyDeathBehaviour>();
+        deathBehaviour = new EnemyDeathBehaviour(gameObject);
+        takeDamageBehaviour = new EnemyTakeDamageBehaviour(this);
     }
 }
