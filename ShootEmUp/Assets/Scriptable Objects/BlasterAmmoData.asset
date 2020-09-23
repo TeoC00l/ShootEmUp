@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BlasterAmmoData
   m_EditorClassIdentifier: 
   speed: 10
-  lifeTime: 0.5
-  damage: 5
+  lifeTime: 1
+  damage: 2
   onHitEffect: {fileID: 0}

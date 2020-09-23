@@ -35,6 +35,14 @@ namespace ShootEmUp
                     ""expectedControlType"": ""Axis"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""CycleWeapon"",
+                    ""type"": ""Button"",
+                    ""id"": ""d189da48-56a4-47ec-b71d-b36663709152"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
                 }
             ],
             ""bindings"": [
@@ -96,11 +104,22 @@ namespace ShootEmUp
                 {
                     ""name"": """",
                     ""id"": ""690d38f1-7a46-4d13-92d2-33114fa5321e"",
-                    ""path"": ""<Keyboard>/space"",
+                    ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Shoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8775d7cd-a91a-4104-9b7e-119e88d9ff1e"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CycleWeapon"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -113,6 +132,7 @@ namespace ShootEmUp
             m_Basic = asset.FindActionMap("Basic", throwIfNotFound: true);
             m_Basic_Move = m_Basic.FindAction("Move", throwIfNotFound: true);
             m_Basic_Shoot = m_Basic.FindAction("Shoot", throwIfNotFound: true);
+            m_Basic_CycleWeapon = m_Basic.FindAction("CycleWeapon", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -164,12 +184,14 @@ namespace ShootEmUp
         private IBasicActions m_BasicActionsCallbackInterface;
         private readonly InputAction m_Basic_Move;
         private readonly InputAction m_Basic_Shoot;
+        private readonly InputAction m_Basic_CycleWeapon;
         public struct BasicActions
         {
             private @PlayerActionControls m_Wrapper;
             public BasicActions(@PlayerActionControls wrapper) { m_Wrapper = wrapper; }
             public InputAction @Move => m_Wrapper.m_Basic_Move;
             public InputAction @Shoot => m_Wrapper.m_Basic_Shoot;
+            public InputAction @CycleWeapon => m_Wrapper.m_Basic_CycleWeapon;
             public InputActionMap Get() { return m_Wrapper.m_Basic; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -185,6 +207,9 @@ namespace ShootEmUp
                     @Shoot.started -= m_Wrapper.m_BasicActionsCallbackInterface.OnShoot;
                     @Shoot.performed -= m_Wrapper.m_BasicActionsCallbackInterface.OnShoot;
                     @Shoot.canceled -= m_Wrapper.m_BasicActionsCallbackInterface.OnShoot;
+                    @CycleWeapon.started -= m_Wrapper.m_BasicActionsCallbackInterface.OnCycleWeapon;
+                    @CycleWeapon.performed -= m_Wrapper.m_BasicActionsCallbackInterface.OnCycleWeapon;
+                    @CycleWeapon.canceled -= m_Wrapper.m_BasicActionsCallbackInterface.OnCycleWeapon;
                 }
                 m_Wrapper.m_BasicActionsCallbackInterface = instance;
                 if (instance != null)
@@ -195,6 +220,9 @@ namespace ShootEmUp
                     @Shoot.started += instance.OnShoot;
                     @Shoot.performed += instance.OnShoot;
                     @Shoot.canceled += instance.OnShoot;
+                    @CycleWeapon.started += instance.OnCycleWeapon;
+                    @CycleWeapon.performed += instance.OnCycleWeapon;
+                    @CycleWeapon.canceled += instance.OnCycleWeapon;
                 }
             }
         }
@@ -203,6 +231,7 @@ namespace ShootEmUp
         {
             void OnMove(InputAction.CallbackContext context);
             void OnShoot(InputAction.CallbackContext context);
+            void OnCycleWeapon(InputAction.CallbackContext context);
         }
     }
 }

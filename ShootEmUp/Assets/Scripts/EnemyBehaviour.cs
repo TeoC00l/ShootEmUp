@@ -9,7 +9,7 @@ public abstract class EnemyBehaviour: MonoBehaviour
     private Transform enemyTransform;
     
     [SerializeField] private int onHitDamage = 2;
-    [SerializeField] private float despawnDistance = 40f;
+    [SerializeField] private float despawnDistance = 30f;
 
     private void Start()
     {

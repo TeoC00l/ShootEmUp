@@ -7,7 +7,6 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
-          <e p="Blaster.cs" t="Include" />
           <e p="Bullet.cs" t="Include" />
           <e p="BulletData.cs" t="Include" />
           <e p="DamageableData.cs" t="Include" />
@@ -19,10 +18,12 @@
           <e p="EnemyDeathBehaviour.cs" t="Include" />
           <e p="EnemyHealth.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="Gun.cs" t="Include" />
           <e p="Health.cs" t="Include" />
           <e p="HealthComponent.cs" t="Include" />
           <e p="IEnemyMovement.cs" t="Include" />
           <e p="IWeapon.cs" t="Include" />
+          <e p="MachineWeapon.cs" t="Include" />
           <e p="Parallax.cs" t="Include" />
           <e p="PlayerActionControls.cs" t="Include" />
           <e p="PlayerDeathBehaviour.cs" t="Include" />
@@ -33,9 +34,10 @@
           <e p="SineEnemyBehaviour.cs" t="Include" />
           <e p="SineEnemyMovement.cs" t="Include" />
           <e p="SpawnManager.cs" t="Include" />
-          <e p="Weapon.cs" t="Include" />
           <e p="WeaponData.cs" t="Include" />
+          <e p="WeaponSocket.cs" t="Include" />
         </e>
+        <e p="Shield.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />

@@ -7,6 +7,7 @@ using UnityEngine.Assertions;
 public class PoolManager : MonoBehaviour
 {
     private static PoolManager instance;
+    private int defaultPoolsize = 100;
 
     public static PoolManager Instance
     {
@@ -22,7 +23,7 @@ public class PoolManager : MonoBehaviour
     }
     
     private Dictionary<int, Queue<GameObject>> poolDictionary = new Dictionary<int, Queue<GameObject>>();
-    
+
     public void CreatePool(GameObject prefab, int poolSize)
     {
         int poolKey = prefab.GetInstanceID();
@@ -37,6 +38,11 @@ public class PoolManager : MonoBehaviour
             newObject.SetActive(false);
             poolDictionary[poolKey].Enqueue(newObject);
         }
+    }
+
+    public void CreatePool(GameObject prefab)
+    {
+        CreatePool(prefab, defaultPoolsize);
     }
 
     public void ReuseObject(GameObject prefab, Vector3 position, Quaternion rotation)

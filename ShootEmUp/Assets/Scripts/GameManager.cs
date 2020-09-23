@@ -19,19 +19,12 @@ public class GameManager : MonoBehaviour
             return instance;
         }
     }
-    
+
     [NonSerialized] public PlayerHealth playerHealth;
-    [NonSerialized] public Transform playerTransform;
-    [NonSerialized] public Vector2 playerPosition;
-    
-    private void Awake()
+
+private void Awake()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         playerHealth = player.GetComponent<PlayerHealth>();
-    }
-
-    private void Update()
-    {
-        playerPosition = playerTransform.position;
     }
 }

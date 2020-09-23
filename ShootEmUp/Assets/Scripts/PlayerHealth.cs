@@ -9,4 +9,14 @@ public class PlayerHealth : Health
     {
         deathBehaviour = GetComponent<PlayerDeathBehaviour>();
     }
+    
+    public void LowerHitPoints(int damage)
+    {
+        CurrentHitPoints -= damage;
+        
+        if(CurrentHitPoints <= 0)
+        {
+            Die();
+        }
+    }
 }

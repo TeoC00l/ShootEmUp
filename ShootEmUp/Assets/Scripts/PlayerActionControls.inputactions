@@ -20,6 +20,14 @@
                     "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "CycleWeapon",
+                    "type": "Button",
+                    "id": "d189da48-56a4-47ec-b71d-b36663709152",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
                 }
             ],
             "bindings": [
@@ -81,11 +89,22 @@
                 {
                     "name": "",
                     "id": "690d38f1-7a46-4d13-92d2-33114fa5321e",
-                    "path": "<Keyboard>/space",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8775d7cd-a91a-4104-9b7e-119e88d9ff1e",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CycleWeapon",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

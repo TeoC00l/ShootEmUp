@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4339f0bccb0f414d99846d8cf3f4eba, type: 3}
-  m_Name: BlasterData
+  m_Script: {fileID: 11500000, guid: 436416936e4cb1b449b7d42d59650fc8, type: 3}
+  m_Name: BazookaRoundData
   m_EditorClassIdentifier: 
-  fireRate: 0.1
-  bullet: {fileID: 7259738096295825242, guid: 1c355f01fb9f2ab4d9fb663859f99386, type: 3}
-  accelerationUnitsPerSecond: 0
+  speed: 2
+  lifeTime: 2
+  damage: 30
+  onHitEffect: {fileID: 0}

@@ -7,6 +7,6 @@ public class BulletData : ScriptableObject
 {
     public float speed = 10f;
     public float lifeTime = 0.5f;
-    public float damage = 5f;
+    public int damage = 5;
     public ParticleSystem onHitEffect;
 }

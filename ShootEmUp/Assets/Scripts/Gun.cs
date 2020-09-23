@@ -2,7 +2,7 @@
 
 using UnityEngine;
 
-public interface IWeapon
+public class Gun : MonoBehaviour
 {
-    void Shoot();
+
 }
