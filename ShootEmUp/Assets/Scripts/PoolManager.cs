@@ -34,7 +34,7 @@ public class PoolManager : MonoBehaviour
 
         for (int i = 0; i < poolSize; i++)
         {
-            GameObject newObject = Instantiate(prefab) as GameObject;
+            GameObject newObject = Instantiate(prefab, gameObject.transform) as GameObject;
             newObject.SetActive(false);
             poolDictionary[poolKey].Enqueue(newObject);
         }

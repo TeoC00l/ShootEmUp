@@ -1,5 +1,6 @@
 ﻿//@Author: Teodor Tysklind / FutureGames / Teodor.Tysklind@FutureGames.nu
 
+using System;
 using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.InputSystem;

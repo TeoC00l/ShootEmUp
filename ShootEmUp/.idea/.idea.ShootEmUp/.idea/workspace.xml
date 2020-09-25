@@ -31,28 +31,21 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PoolManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.0/InputSystem/Plugins/PlayerInput/InputValue.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HealthComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyTakeDamageBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpawnChanceSliders.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.0.0/InputSystem/Plugins/PlayerInput/PlayerInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerTakeDamageBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MachineWeapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HomingEnemyMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Shield.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BulletData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pickup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TakeDamageBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Parallax.cs" />
-        <option value="$PROJECT_DIR$/Assets/SpawnManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HealthComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DamageableData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerHealthComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/EnemyHealthComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/PlayerDeathBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/EnemyDeathBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayerHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Damageable.cs" />
@@ -66,35 +59,44 @@
         <option value="$PROJECT_DIR$/Assets/IEnemyMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BulletData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Blaster.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PoolManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RegularWeapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSocket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerEnemyMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SineEnemyMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IEnemyMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SineEnemyBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IWeapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MachineWeapon.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Parallax.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Shield.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerDeathBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyDeathBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TakeDamageBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerTakeDamageBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyTakeDamageBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SineEnemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyHealth.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Shield.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interfaces/IEnemyMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerTakeDamageBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shield.cs" />
+        <option value="$PROJECT_DIR$/Assets/HomingEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HomingEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SineEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SineEnemyMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PoolManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HomingEnemyMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Slider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SliderInfoCache.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SpawnChanceSliders.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WeaponSocket.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Pickup.cs" />
       </list>
     </option>
   </component>
@@ -148,7 +150,7 @@
       <workItem from="1600351329574" duration="6117000" />
       <workItem from="1600708616004" duration="7488000" />
       <workItem from="1600769923954" duration="39225000" />
-      <workItem from="1600855957564" duration="13560000" />
+      <workItem from="1600855957564" duration="46703000" />
     </task>
     <servers />
   </component>
@@ -193,6 +195,14 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="1477" y="253" width="1893" height="909" key="dock-window-2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1600871768871" />
+    <state x="1617" y="-17" width="1893" height="1027" maximized="true" key="dock-window-3" timestamp="1600984484500">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1617" y="-17" width="1893" height="1027" maximized="true" key="dock-window-3/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1600984484500" />
+    <state x="43" y="0" width="1893" height="1047" key="dock-window-4" timestamp="1600998003460">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="43" y="0" width="1893" height="1047" key="dock-window-4/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1600998003460" />
     <state x="2536" y="240" key="run.anything.popup" timestamp="1600185482464">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

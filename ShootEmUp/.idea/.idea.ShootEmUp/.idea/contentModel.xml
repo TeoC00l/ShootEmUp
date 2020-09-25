@@ -9,32 +9,39 @@
         <e p="Scripts" t="Include">
           <e p="Bullet.cs" t="Include" />
           <e p="BulletData.cs" t="Include" />
-          <e p="DeathBehaviour.cs" t="Include" />
           <e p="Enemy.cs" t="Include" />
           <e p="EnemyDeathBehaviour.cs" t="Include" />
           <e p="EnemyHealth.cs" t="Include" />
           <e p="EnemyTakeDamageBehaviour.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Health.cs" t="Include" />
-          <e p="HealthComponent.cs" t="Include" />
-          <e p="IEnemyMovement.cs" t="Include" />
-          <e p="IWeapon.cs" t="Include" />
+          <e p="HomingEnemy.cs" t="Include" />
+          <e p="HomingEnemyMovement.cs" t="Include" />
+          <e p="Input System" t="Include">
+            <e p="PlayerActionControls.cs" t="Include" />
+          </e>
+          <e p="Interfaces" t="Include">
+            <e p="IDeathBehaviour.cs" t="Include" />
+            <e p="IEnemyMovement.cs" t="Include" />
+            <e p="ITakeDamageBehaviour.cs" t="Include" />
+            <e p="IWeapon.cs" t="Include" />
+          </e>
           <e p="MachineWeapon.cs" t="Include" />
           <e p="Parallax.cs" t="Include" />
-          <e p="PlayerActionControls.cs" t="Include" />
+          <e p="Pickup.cs" t="Include" />
           <e p="PlayerDeathBehaviour.cs" t="Include" />
           <e p="PlayerHealth.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
           <e p="PlayerTakeDamageBehaviour.cs" t="Include" />
           <e p="PoolManager.cs" t="Include" />
+          <e p="Shield.cs" t="Include" />
           <e p="SineEnemy.cs" t="Include" />
           <e p="SineEnemyMovement.cs" t="Include" />
+          <e p="SpawnChanceSliders.cs" t="Include" />
           <e p="SpawnManager.cs" t="Include" />
-          <e p="TakeDamageBehaviour.cs" t="Include" />
           <e p="WeaponData.cs" t="Include" />
           <e p="WeaponSocket.cs" t="Include" />
         </e>
-        <e p="Shield.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />

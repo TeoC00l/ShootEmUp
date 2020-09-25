@@ -15,6 +15,10 @@ public class SineEnemyMovement : MonoBehaviour, IEnemyMovement
     {
         moveDirection = Vector3.down + strafeDirections[Random.Range(0, strafeDirections.Length)];
     }
+    private void Update()
+    {
+        Move();
+    }
 
     public void Move()
     {

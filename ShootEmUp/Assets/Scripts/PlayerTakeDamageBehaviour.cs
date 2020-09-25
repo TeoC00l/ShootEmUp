@@ -1,12 +1,9 @@
 ﻿//@Author: Teodor Tysklind / FutureGames / Teodor.Tysklind@FutureGames.nu
 
-using UnityEngine;
-using UnityEngine.Assertions;
-
 public class PlayerTakeDamageBehaviour : ITakeDamageBehaviour
 {
-    private Shield shield;
-    private Health health;
+    private readonly Shield shield;
+    private readonly Health health;
 
     public PlayerTakeDamageBehaviour(Shield shield, Health health)
     {
@@ -18,7 +15,7 @@ public class PlayerTakeDamageBehaviour : ITakeDamageBehaviour
     {
         if (shield.isActive)
         {
-            shield.takeDamage(damage);
+            shield.TakeDamage(damage);
             return;
         }
 

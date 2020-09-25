@@ -1,15 +1,15 @@
 ﻿//@Author: Teodor Tysklind / FutureGames / Teodor.Tysklind@FutureGames.nu
 
-using UnityEngine;
+using UnityEngine.Assertions;
 
 public class PlayerHealth : Health
 {
     protected override void Initialize()
     {
+        Shield shield = GetComponent<Shield>();
+        Assert.IsNotNull(shield, "player does not have a shield component!");
+        
         deathBehaviour = new PlayerDeathBehaviour(gameObject);
-        takeDamageBehaviour = new PlayerTakeDamageBehaviour(GetComponent<Shield>(), this);
-        
-        
-        
+        takeDamageBehaviour = new PlayerTakeDamageBehaviour(shield, this);
     }
 }

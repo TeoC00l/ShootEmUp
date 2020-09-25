@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 253862643412449278}
   - component: {fileID: 1295317208625753201}
   - component: {fileID: 5118947423018877015}
-  - component: {fileID: 3657340960937592144}
+  - component: {fileID: 1918330599452491094}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: SineEnemy
   m_TagString: Damageable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onHitDamage: 2
   despawnDistance: 40
---- !u!50 &3657340960937592144
+--- !u!50 &1918330599452491094
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -106,10 +106,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1

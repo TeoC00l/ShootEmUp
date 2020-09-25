@@ -3,6 +3,7 @@
 using UnityEngine;
 using System;
 
+[DefaultExecutionOrder(-100)]
 public class GameManager : MonoBehaviour
 {
     private static GameManager instance;
@@ -18,5 +19,12 @@ public class GameManager : MonoBehaviour
 
             return instance;
         }
+    }
+
+    [NonSerialized] public GameObject player;
+
+    private void Awake()
+    {
+        player = FindObjectOfType<PlayerHealth>().gameObject;
     }
 }
